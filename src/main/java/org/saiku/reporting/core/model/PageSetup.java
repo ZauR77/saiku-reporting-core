@@ -34,7 +34,7 @@ public class PageSetup {
 	@XmlElement(name="left-margin")
 	@JsonProperty("leftMargin")
 	private Integer leftMargin;
-
+	
 	public Integer getPageOrientation() {
 		return pageOrientation;
 	}
@@ -82,5 +82,4 @@ public class PageSetup {
 	public void setLeftMargin(Integer leftMargin) {
 		this.leftMargin = leftMargin;
 	}
-
 }

@@ -9,20 +9,16 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class TemplateDefinition {
 	
+	public TemplateDefinition() {	
+		super();
+	}
+	
 	public TemplateDefinition(String url, String name) {	
 		super();
 		this.setUrl(url);
 		this.setName(name);
 	}
-	
-	public TemplateDefinition() {
-	     this.url = new String();
-	     this.name = new String();
-	     this.description = new String();
-	     this.displayName = new String();
-	 }
-	
-	
+
 	@XmlElement(name="url")	
 	private String url;
 	
